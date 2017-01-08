@@ -1,7 +1,7 @@
 var React = require('react');
 var uuid = require('node-uuid');
 
-var TodoList = require('TodoList');
+import TodoList from 'TodoList';
 var AddTodo = require('AddTodo');
 var TodoSearch = require('TodoSearch');
 var TodoAPI = require('TodoAPI');
