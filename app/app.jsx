@@ -12,10 +12,6 @@ store.subscribe(() => {
   console.log('New state:', store.getState());
 });
 
-store.dispatch(actions.addTodo('Take a nap'));
-store.dispatch(actions.setSearchText('nap'));
-store.dispatch(actions.toggleShowCompleted());
-
 // Load Foundation
 $(document).foundation();
 
