@@ -11,10 +11,8 @@ import Login from 'Login';
 
 store.dispatch(actions.startAddTodos());
 
-// Load Foundation
 $(document).foundation();
 
-// App CSS
 require('style!css!sass!applicationStyles');
 
 ReactDOM.render(
