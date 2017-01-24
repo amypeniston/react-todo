@@ -2,7 +2,6 @@ var $ = require('jquery');
 
 module.exports = {
   filterTodos: function (todos, showCompleted, searchText) {
-    searchText = searchText.toLowerCase();
     var filteredTodos = todos;
 
     // Filter by showCompleted
@@ -13,7 +12,7 @@ module.exports = {
     // Filter by searchText
     filteredTodos = filteredTodos.filter((todo) => {
       var todoText = todo.text.toLowerCase();
-      return searchText.length === 0 || todoText.indexOf(searchText) > -1;
+      return searchText.length === 0 || todoText.indexOf(searchText.toLowerCase()) > -1;
     });
 
     // Sort by incomplete first
